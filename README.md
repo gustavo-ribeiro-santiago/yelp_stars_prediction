@@ -2,6 +2,8 @@
 
 This project demonstrates a machine learning pipeline for classifying Yelp text reviews into star ratings (1-5) using multiple supervised learning models, ranging from traditional classifiers to more advanced deep learning architectures. Additionally, a Power BI dashboard helps visualize the models' results.
 
+[![Notebook Screenshot](screenshot.png)](https://colab.research.google.com/drive/1-LlGHYMmxs1I94A-L3JyftgCQtLDMI_U#scrollTo=MRqtBh44kreg)
+
 ## Possible Use Cases
 
 The machine learning models developed in this project for Yelp review star rating prediction can be applied in various real-world scenarios. Some possible use cases include:
@@ -44,13 +46,15 @@ The goal of this project is to develop machine learning models that can predict 
 
 ## Power BI Dashboard
 
+[![Power BI Screenshot](power_bi_screenshot.png)](https://app.powerbi.com/view?r=eyJrIjoiMTVmNTMwOGEtYjIxMy00YjUyLWE4NTItYTg1OGE5MjkwYjgwIiwidCI6IjJmZmQxOWViLTU5ZWEtNGJlOS1hOTEwLThhNDE5ZDdjOTM1OSJ9)
+
 A Power BI dashboard is available for interactive exploration of model performance and evaluation metrics. This dashboard includes visualizations of each model's accuracy, F1 scores, and other relevant metrics for interpreting and comparing model performance. You can find the Power BI '.pbix' file in this repository on the 'results' folder or access it directly [here](https://app.powerbi.com/view?r=eyJrIjoiMTVmNTMwOGEtYjIxMy00YjUyLWE4NTItYTg1OGE5MjkwYjgwIiwidCI6IjJmZmQxOWViLTU5ZWEtNGJlOS1hOTEwLThhNDE5ZDdjOTM1OSJ9).
 
 ## Repository Structure
 
 ```plaintext
 ├── yelp_stars_prediction.ipynb                               # Jupyter Notebook with code for model building and evaluation
-├── models/                                                   # Folder containing saved trained models
+├── models/                                                   # Folder containing saved trained models and key metrics
 ├── results/yelp stars prediction results analysis.pbix       # Power BI dashboard for model evaluation and analysis
 ├── README.md                                                 # Project description and information
 ```
