@@ -2,6 +2,32 @@
 
 This project demonstrates a machine learning pipeline for classifying Yelp text reviews into star ratings (1-5) using multiple supervised learning models, ranging from traditional classifiers to more advanced deep learning architectures. Additionally, a Power BI dashboard helps visualize the models' results.
 
+## Possible Use Cases
+
+The machine learning models developed in this project for Yelp review star rating prediction can be applied in various real-world scenarios. Some possible use cases include:
+
+1. **Customer Sentiment Analysis**
+   - Businesses can use the models to automatically analyze customer feedback and determine the general sentiment of reviews and their intensity. This can help companies identify areas for improvement and monitor customer satisfaction more efficiently.
+
+2. **Automated Review Categorization**
+   - The models can automatically categorize reviews by star ratings, enabling businesses to quickly filter and prioritize feedback based on customer satisfaction. This is particularly useful for companies handling large volumes of reviews across various channels, including social media posts, emails, WhatsApp messages, chat logs, review sites without a rating system, and YouTube videos (which can be transcribed and analyzed). These models help businesses make sense of feedback, even when no explicit user rating is provided.
+
+3. **Real-time Feedback Monitoring**
+   - The models can be integrated into a real-time feedback monitoring system. As customers submit reviews, messages or posts, the system can automatically predict the star rating and alert the business to low-rated reviews, allowing for faster responses to dissatisfied customers.
+
+4. **Product and Service Improvement**
+   - By analyzing trends in low-rated reviews (e.g., consistently 1-star reviews mentioning poor service or food quality), businesses can identify recurring issues and focus their efforts on improving specific areas like customer service, product quality, or delivery times.
+
+5. **Review Summarization and Prioritization**
+   - Companies can use the models to prioritize reviews based on their predicted star ratings. Higher-rated reviews can be highlighted for marketing and customer success teams, while lower-rated reviews can be flagged for follow-up actions or further analysis.
+
+6. **Competitive Analysis**
+   - The models can be applied to analyze reviews of competitors to understand their strengths and weaknesses. This information can be used to inform marketing strategies, product development, and customer engagement efforts.
+
+7. **Market Research**
+   - The predictive models can aid in market research by categorizing and analyzing large amounts of customer feedback, offering insights into customer preferences, product performance, and service satisfaction across different regions or demographics.
+     
+
 ## Project Contents
 
 - **Notebook** (yelp_stars_prediction.ipynb): Step-by-step Jupyter Notebook that covers data preprocessing, model training, and evaluation.
@@ -23,10 +49,10 @@ A Power BI dashboard is available for interactive exploration of model performan
 ## Repository Structure
 
 ```plaintext
-├── yelp_stars_prediction.ipynb                                     # Jupyter Notebook with code for model building and evaluation
-├── models/                                                         # Folder containing saved trained models
-├── results/yelp stars prediction results analysis.pbix             # Power BI dashboard for model evaluation and analysis
-├── README.md                                                       # Project description and information
+├── yelp_stars_prediction.ipynb                               # Jupyter Notebook with code for model building and evaluation
+├── models/                                                   # Folder containing saved trained models
+├── results/yelp stars prediction results analysis.pbix       # Power BI dashboard for model evaluation and analysis
+├── README.md                                                 # Project description and information
 ```
 
 ## Project Workflow
