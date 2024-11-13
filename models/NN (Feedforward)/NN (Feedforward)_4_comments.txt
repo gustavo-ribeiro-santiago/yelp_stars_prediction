@@ -1,0 +1,29 @@
+
+Added Embedding (5000, 128, 200), SpatialDropout1D (0.2) and GlobalAveragePooling1D Layers,
+and changed to 15 epochs while maintaining the early stopping (which does not seem to
+be working)
+
+Code Snippets:
+
+# Model architecture
+model = Sequential([
+    Embedding(input_dim=5000, output_dim=128, input_length=200),  # Embedding Layer
+    SpatialDropout1D(0.2),  # to improve regularization
+    GlobalAveragePooling1D(),  # to reduce dimensionality
+    Dense(256, activation='relu', input_shape=(200,)),
+    Dropout(0.1),
+    Dense(128, activation='relu'),
+    Dropout(0.1),
+    Dense(5, activation='softmax')  # 5 classes
+])
+
+model.compile(optimizer=Adam(learning_rate=0.0001), loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+
+# Early Stopping Callback
+early_stopping = EarlyStopping(monitor='val_loss', patience=3, restore_best_weights=True)
+
+# Fit the model
+history: History = model.fit(X_train_balanced, y_train_balanced,
+                             validation_data=(X_val_padded, y_val_adjusted),
+                             epochs=15, batch_size=16,
+                             callbacks=[early_stopping])

@@ -1,0 +1,1 @@
+with lemmatization, nltk stop words removal and class imbalance handling with class_weight, max_features=5000 on tfidf; kernel='linear', C=1, decision_function_shape='ovo'

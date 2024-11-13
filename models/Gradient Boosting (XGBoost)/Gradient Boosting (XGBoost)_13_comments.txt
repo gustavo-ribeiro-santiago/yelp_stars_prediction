@@ -1,0 +1,1 @@
+max_features=5000 on tfidf, with lemmatization, nltk stop words removal and class imbalance handling with class_weight
