@@ -1,8 +1,12 @@
 # Yelp 1-5 Star Ratings Prediction From Text Reviews
 
-This project demonstrates a machine learning pipeline for classifying Yelp text reviews into star ratings (1-5) using multiple supervised learning models, ranging from traditional classifiers to more advanced deep learning architectures. Additionally, a Power BI dashboard helps visualize the models' results.
+This project presents a machine learning pipeline for classifying Yelp text reviews into star ratings (1-5) using multiple supervised learning models, ranging from traditional classifiers to more advanced deep learning architectures. Additionally, a Power BI dashboard helps visualize the models' results.
 
 [![Notebook Screenshot](screenshot.png)](https://colab.research.google.com/drive/1-LlGHYMmxs1I94A-L3JyftgCQtLDMI_U#scrollTo=MRqtBh44kreg)
+
+## Project Objective
+
+The goal of this project is to develop machine learning models that can predict the star rating of a review based on its text content. This predictive capability could be applied to unlabeled reviews, providing businesses with insights into customer satisfaction and potential areas of improvement.
 
 ## Possible Use Cases
 
@@ -28,21 +32,16 @@ The machine learning models developed in this project for Yelp review star ratin
 
 7. **Market Research**
    - The predictive models can aid in market research by categorizing and analyzing large amounts of customer feedback, offering insights into customer preferences, product performance, and service satisfaction across different regions or demographics.
-     
+
+## About Yelp
+
+Yelp is an online platform where users rate and review local businesses, such as restaurants, cafes, retail stores, hotels, and service providers. The dataset consists of user-generated reviews, each labeled with a star rating (1 to 5), representing customer satisfaction levels, taking into account various aspects such as service quality, product offerings, and ambiance.
 
 ## Project Contents
 
 - **Notebook** (yelp_stars_prediction.ipynb): Step-by-step Jupyter Notebook that covers data preprocessing, model training, and evaluation.
 - **Saved Models** (models/): The trained machine learning models ready for deployment and their key metrics.
 - **Power BI Dashboard** (results/yelp stars prediction results analysis.pbix): A `.pbix` file providing a visual analysis of each model’s performance, accessible [here](https://app.powerbi.com/view?r=eyJrIjoiMTVmNTMwOGEtYjIxMy00YjUyLWE4NTItYTg1OGE5MjkwYjgwIiwidCI6IjJmZmQxOWViLTU5ZWEtNGJlOS1hOTEwLThhNDE5ZDdjOTM1OSJ9) and also available in the repository for further exploration.
-
-## About Yelp
-
-Yelp is an online platform where users rate and review local businesses, such as restaurants, cafes, retail stores, hotels, and service providers. The dataset consists of user-generated reviews, each labeled with a star rating (1 to 5), representing customer satisfaction levels, taking into account various aspects such as service quality, product offerings, and ambiance.
-
-## Project Description
-
-The goal of this project is to develop machine learning models that can predict the star rating of a review based on its text content. This predictive capability could be applied to unlabeled reviews, providing businesses with insights into customer satisfaction and potential areas of improvement.
 
 ## Power BI Dashboard
 
